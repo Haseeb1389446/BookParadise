@@ -357,41 +357,52 @@ i{
 
 /* footer */
 
-.f{
+.footer {
+    line-height: 2;
+    text-align: center;
+    padding: 5px;
+    color: gray;
+}
+
+.f2 {
+    text-align: center;
+}
+
+.f {
     width: 100%;
     background-color: black;
     color: white;
 }
 
-.f-col1 a{
+.f-col1 a {
     font-size: 25px;
 }
 
-.f-col2{
+.f-col2 {
     text-align: center;
 }
 
-.f-col2 a{
+.f-col2 a {
     margin-bottom: 20px;
     font-size: 20px;
 }
 
-.f-col2 p{
+.f-col2 p {
     margin-top: 20px;
     color: gray;
 }
 
-.f-col3 ul li{
+.f-col3 ul li {
     padding: 3px;
     cursor: pointer;
     color: gray;
 }
 
-.f-col3 ul li:hover{
+.f-col3 ul li:hover {
     color: rgb(105, 104, 104);
 }
 
-.f-col3 ul{
+.f-col3 ul {
     margin-top: 10px;
     list-style: none;
 }
@@ -400,12 +411,6 @@ i{
     margin-bottom: 10px;
 }
 
-.footer{
-    line-height: 2;
-    text-align: center;
-    padding: 5px;
-    color: gray;
-}
 
 .row{
     display: flex;
