@@ -63,6 +63,12 @@ nav {
   cursor: pointer;
 }
 
+.navigation i {
+  display: none;
+  font-size: large;
+  color: black;
+}
+
 /* navbar end */
 
 /* home start */
@@ -77,8 +83,7 @@ nav {
 
 .col-1 {
   width: 50%;
-  margin-right: 50px;
-  margin-left: 20px;
+  padding-right: 20px;
 }
 
 .col-1 p {
@@ -87,7 +92,7 @@ nav {
 }
 
 .col-1 h1 {
-  font-size: 60px;
+  font-size: 3rem;
   margin-bottom: 30px;
   font-weight: 500;
 }
@@ -134,37 +139,29 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top: 210px;
-  margin-bottom: 200px;
   width: 100%;
-}
-
-.featured-p {
-  margin-top: 100px;
-  margin-bottom: 150px;
-  width: 100%;
-}
-
-.featured .line {
-  margin-bottom: 98px;
 }
 
 .boxes {
   width: 100%;
-  display: flex;
-  align-items: center;
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
+  margin-bottom: 70px;
 }
 
 .box {
-  width: 280px;
   background-color: rgba(0, 0, 0, 0.452);
-  margin-right: 50px;
+  padding: 0 5px;
+  gap: 50px;
+  margin-bottom: 20px;
   cursor: pointer;
   border-radius: 2px;
 }
 
 .box:hover {
-  margin-bottom: 15px;
+  gap: 30px;
   transition: 0.3s;
 }
 
@@ -189,10 +186,6 @@ nav {
 
 .rating i {
   color: #f8d383;
-}
-
-.row {
-  margin-bottom: 20px;
 }
 
 /* featured end */
@@ -350,25 +343,41 @@ i {
 /* footer */
 
 .footer {
-  line-height: 2;
-  text-align: center;
-  padding: 5px;
-  color: gray;
-}
-
-.f {
   width: 100%;
   background-color: black;
   color: white;
 }
 
-.f2 {
-  text-align: center;
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px;
 }
+
+.footer-bottom {
+  text-align: center;
+  padding: 5px 0;
+  
+}
+
+.footer hr {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* column 1 */
 
 .f-col1 a {
   font-size: 25px;
 }
+
+/* column 2 */
 
 .f-col2 {
   text-align: center;
@@ -384,6 +393,8 @@ i {
   color: gray;
 }
 
+/* column 3 */
+
 .f-col3 ul li {
   padding: 3px;
   cursor: pointer;
@@ -397,24 +408,6 @@ i {
 .f-col3 ul {
   margin-top: 10px;
   list-style: none;
-}
-
-.f hr {
-  margin-bottom: 10px;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding: 30px;
-  height: 30vh;
-}
-
-.f a {
-  text-decoration: none;
-  color: white;
 }
 
 /* footer end */
@@ -432,7 +425,6 @@ i {
   }
 
 }
-
 
 @media (max-width: 1186px) {
 
