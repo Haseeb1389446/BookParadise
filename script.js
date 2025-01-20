@@ -3,7 +3,7 @@
 document.querySelector(".navbar").innerHTML=`<nav>
   <div class="logo"><a href="index.html">BookParadise</a></div>
   <div class="navigation">
-      <ul>
+      <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="product.html">Product</a></li>
           <li><a href="about.html">About us</a></li>
@@ -13,10 +13,10 @@ document.querySelector(".navbar").innerHTML=`<nav>
         <i class="fa-solid fa-bars"></i>
         <div class="drop-content">
           <ul>
-            <li>Home</li>
-            <li>Product</li>
-            <li>About us</li>
-            <li>Contact us</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
           </ul>
         </div>
       </div>
@@ -113,3 +113,18 @@ if(phone.match(phonecheck)){
 
 
 }
+
+// Hamburger
+
+document.addEventListener("click", function (event) {
+
+    const dropdown = document.querySelector(".dropdown");
+    const dropContent = dropdown.querySelector(".drop-content");
+
+    if (!dropdown.contains(event.target)) {
+        dropContent.style.display = "none";
+    } else {
+        dropContent.style.display = "block";
+    }
+
+});
