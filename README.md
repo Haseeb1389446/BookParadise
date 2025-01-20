@@ -8,7 +8,7 @@ Here is the screenshots of the project:
 
 ### Home
 
-![image](https://github.com/user-attachments/assets/4f7c86e2-efab-482c-b624-fcb7665083b1)
+![image](https://github.com/Haseeb1389446/BookParadise/blob/main/Bookparadise%20view/Bookparadise%20-home-view.png)
 
 ### Products
 
@@ -17,7 +17,7 @@ Here is the screenshots of the project:
 
 ### About
 
-![image](https://github.com/user-attachments/assets/81624809-2aee-49d4-8efa-2c9c019eef1f)
+![image](https://github.com/Haseeb1389446/BookParadise/blob/main/Bookparadise%20view/Bookparadise%20-about-view.png)
 
 
 ### Contact
