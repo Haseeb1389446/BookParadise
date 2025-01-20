@@ -1,21 +1,32 @@
 // navbar
 
 document.querySelector(".navbar").innerHTML=`<nav>
-<div class="logo"><a href="index.html">BookParadise</a></div>
-<div class="navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contect.html">Contect us</a></li>
-    </ul>
-</div>
-</nav>`
+  <div class="logo"><a href="index.html">BookParadise</a></div>
+  <div class="navigation">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+      </ul>
+      <div class="dropdown">
+        <i class="fa-solid fa-bars"></i>
+        <div class="drop-content">
+          <ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>About us</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </nav>`;
 
 
 // footer
 
-document.querySelector(".f").innerHTML=`<div class="row">
+document.querySelector(".footer").innerHTML=`<div class="footer-row">
 <div class="f-col1"><a href="index.html" class="logowhite">BookParadise</a></div>
 <div class="f-col2">
 <a href="index.html" class="logowhite">BookParadise</a>
@@ -35,7 +46,7 @@ document.querySelector(".f").innerHTML=`<div class="row">
 
 <hr>
 
-<div class="footer">Copyright &copy; www.BookParadise.com | All right reseved!</div>`
+<div class="footer-bottom">Copyright &copy; www.BookParadise.com | All right reseved!</div>`;
 
 
 
