@@ -67,6 +67,32 @@ nav {
   display: none;
   font-size: large;
   color: black;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline;
+}
+
+.dropdown i:focus-within .drop-content {
+  display: block;
+}
+
+.drop-content {
+  background-color: black;
+  position: absolute;
+  color: white;
+  border-radius: 10px;
+  display: none;
+  min-width: 200px;
+  z-index: 10;
+}
+
+.drop-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navbar end */
@@ -196,6 +222,7 @@ nav {
   width: 60%;
   margin: auto;
   margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -222,8 +249,8 @@ nav {
 /* collapse */
 
 .Pagination {
-  margin: 30px 30px;
-  margin-left: 290px;
+  margin-bottom: 40px;
+  margin-left: 100px;
 }
 
 .Pagination span {
@@ -245,7 +272,9 @@ nav {
 .about {
   margin: auto;
   width: 80%;
-  height: 60vh;
+  position: relative;
+  min-height: 63vh;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,7 +303,7 @@ nav {
 
 /* contect */
 
-.contect {
+.contact {
   width: 100%;
   height: 70vh;
   display: flex;
@@ -282,7 +311,7 @@ nav {
   justify-content: center;
 }
 
-.contect h2 {
+.contact h2 {
   text-align: center;
 }
 
@@ -346,6 +375,8 @@ i {
   width: 100%;
   background-color: black;
   color: white;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-row {
@@ -359,7 +390,6 @@ i {
 .footer-bottom {
   text-align: center;
   padding: 5px 0;
-  
 }
 
 .footer hr {
@@ -415,19 +445,29 @@ i {
 /* MEDIA QUERY */
 
 @media (max-width: 768px) {
-
   .navigation ul {
-      display: none;
+    display: none;
   }
 
   .navigation i {
-      display: block;
+    display: block;
   }
 
+  .nav2 {
+    flex-direction: column;
+  }
+
+  .nav2 .logo2 {
+    margin-bottom: 20px;
+  }
+
+  .input input {
+    margin-bottom: 20px;
+    min-width: 350px;
+  }
 }
 
 @media (max-width: 1186px) {
-
   .home {
     width: 100%;
     padding: 20px 0;
@@ -438,7 +478,7 @@ i {
     text-align: center;
   }
 
-  .col-1 p{
+  .col-1 p {
     text-align: center;
     padding: 0 25px;
   }
@@ -462,6 +502,14 @@ i {
 
   .f-col3 {
     margin-bottom: 20px;
+  }
+
+  .nav2 {
+    width: 80%;
+  }
+
+  .contact i {
+    display: none;
   }
 
 }
